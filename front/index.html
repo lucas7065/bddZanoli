@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Clientes</h1>
+
+        <!-- Formulario para agregar un cliente -->
+        <div class="form-container">
+            <h2>Agregar Cliente</h2>
+            <form id="clienteForm">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="destino" placeholder="Destino" required>
+                <button type="submit">Agregar Cliente</button>
+            </form>
+        </div>
+
+        <!-- Tabla de clientes -->
+        <div class="table-container">
+            <h2>Lista de Clientes</h2>
+            <table id="clientesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Destino</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los clientes dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
